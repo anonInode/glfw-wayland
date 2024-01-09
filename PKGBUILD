@@ -8,8 +8,8 @@
 
 pkgname=glfw-wayland-minecraft
 pkgdesc="A free, open source, portable framework for graphical application development (wayland, patched for Minecraft)"
-pkgver=3.4.0+1.19
-_pkggit=3eaf1255b29fdf5c2895856c7be7d7185ef2b241
+pkgver=3.4.0+1.20
+_pkggit=b4c3ef9d0fdf46845f3e81e5d989dab06e71e6c1
 pkgrel=2
 arch=('x86_64')
 url="https://github.com/Admicos/minecraft-wayland"
@@ -27,7 +27,7 @@ source=("https://github.com/glfw/glfw/archive/${_pkggit}.tar.gz"
         "0008-Wayland-Add-support-for-wp_fractional_scale_v1.patch"
         "0009-Defer-setting-cursor-position-until-the-cursor-is-lo.patch"
         "0010-Don-t-crash-getting-window-position.patch")
-sha512sums=('c205eb24b40f818976c7338caf1f05b06947c9348a83533bdee6f60dd5db8c7342a110242627aaab35bc4ffd8e29f9ec258bccac814b9a93995aa24133bed64d'
+sha512sums=('58d87b9e7e447017bafd5915dda6bbb0ebea3cdb276525a9c49a7d53ee493fa7785ee2f7c79311301222553942f87b645228a7d11db8858adabf067fccb2f70f'
             '9c6f6e81de1feafeed93988207999d21754c93ff97c8c3158aee43f38b291f4589feaf83e42081445cf89c9209c86e56a0102fccf0d0a97740874dd88e84a746'
             'd8e8b704e19652bb30c7799300a1bd0db1619ad17e8e36a3ee51673933eba6a8c47dbd615f4a9a385021bdfaa1ddedb2f24e8c05b670ef5278c71d217e91146e'
             'c524857950180090fd774c5650a8467357e91eea0d6bef49bd28f2ef52981767f28f3dbb1649f98e25188e56bfa41855aca9bf99e335111c9557ff8e069588e7'
