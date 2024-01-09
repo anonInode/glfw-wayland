@@ -1,0 +1,27 @@
+From 3ba084dd5a96834d5046736ad459c5c119804376 Mon Sep 17 00:00:00 2001
+From: GG Bond <whatever@tagkong.com>
+Date: Tue, 9 Jan 2024 13:25:26 +0800
+Subject: [PATCH] Don't crash getting window position
+
+Signed-off-by: GG Bond <whatever@tagkong.com>
+---
+ src/wl_window.c | 3 +--
+ 1 file changed, 1 insertion(+), 2 deletions(-)
+
+diff --git a/src/wl_window.c b/src/wl_window.c
+index 7c509896..b3ca3e45 100644
+--- a/src/wl_window.c
++++ b/src/wl_window.c
+@@ -2124,8 +2124,7 @@ void _glfwGetWindowPosWayland(_GLFWwindow* window, int* xpos, int* ypos)
+     // A Wayland client is not aware of its position, so just warn and leave it
+     // as (0, 0)
+ 
+-    _glfwInputError(GLFW_FEATURE_UNAVAILABLE,
+-                    "Wayland: The platform does not provide the window position");
++    fprintf(stderr, "!!! Ignoring Error: Wayland: The platform does not provide the window position\n");
+ }
+ 
+ void _glfwSetWindowPosWayland(_GLFWwindow* window, int xpos, int ypos)
+-- 
+2.43.0
+
